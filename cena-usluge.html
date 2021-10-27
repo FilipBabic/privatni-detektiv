@@ -48,18 +48,212 @@
 </nav>
 <div class="container mb-3">
   <h3 class="mt-4 mb-4 text-center">U cenu usluge uključeno je:</h3>
-    <ul class="list-group">
-        <li class="list-group-item" ># ČETIRI DETEKTIVA</li>
-        <li class="list-group-item"># DVA VOZILA</li>
-        <li class="list-group-item"># SVI TROŠKOVI NA TERENU</li>
-        <li class="list-group-item"># DOKAZNI MATERIJAL</li>
-        <li class="list-group-item"># SLIKE</li>
-        <li class="list-group-item"># VIDEO I AUDIO SNIMCI</li>
-        <li class="list-group-item"># IZVEŠTAVANJE U REALNOM VREMENU</li>
-        <li class="list-group-item"># PISANI IZVEŠTAJ I GARANCIJA
-        ZA REZULTATE</li>
-    </ul>
-    <a href="detektivske-usluge-cene.html" class="btn btn-primary btn-block mt-3">Nazad</a>
+      <script>
+        var url;
+        function getURL() {
+            url = window.location.href.split('#')[1]
+            if (url === "1"){
+              return ["ČETIRI DETEKTIVA","DVA VOZILA","SVI TROŠKOVI NA TERENU","DOKAZNI MATERIJAL","SLIKE",
+              "VIDEO I AUDIO SNIMCI","IZVEŠTAVANJE U REALNOM VREMENU","PISANI IZVEŠTAJ I GARANCIJA ZA REZULTATE"]
+            }else if (url === "2"){
+              return ["sve pripremne radnje", "dva licencirana detektiva", "terenski rad", "jedno vozilo",
+              "iznajmljivanje opreme", "svi troškovi na terenu (ukoliko se radi u Beogradu)", "izveštaji sa terena", "kompletan dokazni materijal", "fotografije" , "video snimci"]
+            }else if (url === "3"){
+              return ["tim od 3 do 5 detktiva", "terenski rad u svim uslovima", "dva vozila", 
+              "štampanje materijala za deljenje", "puštanja informacije kanala informisanja", "izveštaji sa terena", "forenzička analiza",
+              "intervjuisanje lica", "prikupljanje podataka"]}
+            else if (url === "4"){
+              return ["jedan licencirani detektiv", "obavljanje neophodne papirologije", "odlazak do arhiva", "plaćanje svih neophodnih taksi", "analiza dokumentacije", "pribavljanje informacije iz arhiva",
+              "dostavljanje informacije u elektronskom obliku ili u vidu dokumenta", "garancija za validnost informacije"]}
+            else if (url === "5"){
+              return ["angažovanje stručnjaka za konkretnu oblast poslovanja", "obavljanje dubinske analize poslovanja", "lociranje problema", "izrada i razrada plana", "odabir najefikasnije metode za prevenciju", "implemantacija metode kroz plan", "nadgledanje implemantacije kroz faze", 
+              "savetovanje u narednih 6 meseci od datuma implementacije metode", "pismeni izveštaj"]}
+            else if (url === "6"){
+              return ["sve pripremne radnje", "dva licencirana detektiva", "jedno vozilo", "terenski rad", "svi troškovi na terenu (ukoliko se radi u Beogradu)", "iznajmljivanje opreme", "izveštaji sa terena",
+            "komplatan dokazni materijal", "fotografije", "video snimci"]}
+            else if (url === "7"){
+              return ["analiza situacije od strane stručnjaka iz agencije", "sva neophodna papirologija", "plaćanje taksi i troškova", "podnošenje prijave", "pravna asistencija",
+              "pomoć pri svim radnjama koje su u interesu rešavanja slučaja", "pismeni izveštaj", "povratak svojine ili prava na istu", "saniranje posledica", "sve neophodne aktivnosti jer variraju od slučaja do slučaja"]}
+            else if (url === "8"){
+              return ["dva licencirana detektiva", "jedno vozilo", "terenski rad", "podnošenje prijave", "sva neophodna papirologija", "pismeni izveštaj", "identifikacija osumnjičenih", "analiza i forenzika dokaznog materijala",
+              "intervjuisanje", "stražaranje (po potrebi)", "sve dodatne neophodne radnje koje su u interesu podizanja nivoa bezbednosti klijenta i identifikaciji anonimnog lica"]}
+            else if (url === "9"){
+              return ["angažovanje stručnjaka za oblast poslovanja", "analiza dokumentacije", "intervjuisanje menadžmenta", "prikupljanje informacija", "sastavljanje pismenog izveštaja",
+              "stručno mišljenje i zaključak", "savetovanje", "sva neophodna papirologija", "takse i troškovi"]}
+            else if (url === "10"){
+              return ["dva licencirana detektiva", "terenski operativni rad", "jedno vozilo", "svi troškovi na terenu (ukoliko se radi u Beogradu)", "kompletan dokazni materijal", "fotografije", "video snimci",
+            "pismeni izveštaj", "sva neophodna prateća dokumantacija", "sav inkriminišući materijal", "veštačenje i svedočenje (po potrebi i dodatno se naplaćuje)"]}
+            else if (url === "11"){
+              return ["sve pripremne radnje", "licencirani detektiv “specijalista” (moguće je angažovati pripadnike oba pola)", "vozač", "jedno vozilo", "dodatni terenski rad (ukoliko postoji potreba)", "kontakt sa subjektom i provokacija u maniru koji je dogovoren sa klijentom",
+            "sav dokazni materijal", "troškovi na terenu (ukoliko se radi u Beogradu)", "fotografije", "video snimci", "kontakt broj subjekta kao dokaz namere (ukoliko nasedne na provokaciju)", "pismeni izveštaj"]}
+            else if (url === "12"){
+              return ["sve pripremne radnje", "dva licencirana detektiva specijalista", "vozilo", "operativni i terenski rad", "iznajmljivanje opreme", "sprovođenje istrage", "intervjuisanje (ukoliko je potrebno)", 
+              "troškovi na terenu (ukoliko se radi u Beogradu) sprovođenje odabrane metode (varira od slučaja do slučaja)", "sav dokazni materijal", "fotografije", "video snimci", "tajno nadgledanje", "monitoring", "veštačenje (ukoliko bude potrebe)", "pismeni izveštaj"]}
+            else if (url === "13"){
+              return ["angažovanje specijaliste iz agencije", "pozadinska provera", "intervjuisanje", "operativni i terenski rad", "provera podataka iz arhiva", "prikupljanje podataka", 
+              "sva neophodna dokumentacija", "sve takse", "pismeni izveštaj", "poligraf test (po potrebi-dodatno se plaća)"]}
+            else if (url === "14"){
+              return ["angažovanja stručnjaka za oblast poslovanja", "analiza dokumentacije", "prikupljanje podataka", "operativni i terenski rad", "intervjuisanje", "profesionalna procena", "zaključak", 
+              "mišljenje i savet", "analiza i rangiranje faktora rizika", "pismeni izveštaj"]}
+            else if (url === "15"){
+              return ["dva licencirana detektiva", "operativni terenski rad", "potraga i lociranje izvršioca prevare", "sva neophodna dokumentacija", "prikupljanje dokaznog materijala", "pismeni izveštaj"]}
+            else if (url === "16"){
+              return [ "angažovanje stručnjaka za pretragu imovine", "sva dokumentacija", "sve takse", "prikupljanje podataka", "provera podataka iz arhiva", "terenski rad", "analiza dokumantacije", "pismeni izveštaj"]}
+            else if (url === "17"){
+              return ["dva licencirana detektiva", "jedno vozilo", "operativni i terenski rad", "forenzičke usluge", "troškovi na terenu (ukoliko se radi u Beogradu) intervjuisanje lica", 
+              "sve neophodne radnje radi lociranja predmeta", "pismeni izveštaj"]}
+            else if (url === "18"){
+              return ["angažovanje stručnjaka specijaliste", "provera podataka iz arhiva", "sva neophodna dokumentacija i takse", "analiza dokumentacije", "prikupljanje podataka",
+            "operativni i terenski rad"," stručna procena", "pismeni izveštaj"]}
+            else if (url === "19"){
+              return ["dva licencirana detektiva", "dva saradnika", "dva vozila", "primena kontra-obevaštajnih metoda", "primena kontra-pratnje", "operativni i terenski rad", 
+              "svi troškovi na terenu (ukoliko se radi u Beogradu)", "fotografije i video snimci", "sav dokazni materijal", "pružanje zaštite klijentu radi njegove bezbednosti", "zadržavanja prestupnika do dolaska ovlašćenih lica",
+              "prijavljivanje krivičnog dela nadležnim organima", "svedočenje (po potrebi)", "pismeni izveštaj"]}
+            else if (url === "20"){
+              return ["dva licencirana detektiva", "jedno vozilo", "operativan i terenski rad", "troškovi na terenu (ukoliko se radi u Beogradu)", "fotografije i video snimci", "sva dokumentacija i takse",
+              "sav dokazni materijal", "pismeni izveštaj", "veštačenje (po potrebi)"]}
+            else if (url === "21"){
+              return ["dužnika-dve licencirana detektiva", "jedno vozilo", "operativni i terenski rad", "troškovi na terenu (ukoliko se radi u Beogradu)", "fotografije i video snimci", "sav dokazni materijal", 
+              "lociranje subjekta i dovođenje klijenta na lice mesta (po potrebi)", "sva neophodna dokumentacija", "pismeni izveštaj"]}
+            else if (url === "22"){
+              return ["prikupljanje podataka", "analiza podataka",
+              "pismeni izveštaj", "stručno mišljenje i savetovanje", "provera podataka iz arhiva", "terenski rad"]}
+            else if (url === "23"){
+              return ["dva licencirana detektiva", "jedno vozilo", "operativni terenski rad", "sav dokazni materijal", "troškovi na terenu (ukoliko se radi u Beogradu)", "pismeni izveštaj"]}
+            else if (url === "24"){
+              return ["dva licencirana detektiva", "jedno vozilo", "operativni terenski rad", "troškovi na terenu (ukoliko se radi u Beogradu)", "dokazni materijal", 
+              "fotografije i video snimci; “osint metodika", "“humint” metodika", "“sigint” metodika", "“imint” metodika", "pismeni izveštaj"]}
+            else if (url === "25"){
+              return ["jedan do dva licencirane detektiva", "vozilo po potrebi", "sva neophodna dokumentacija", "uručivanje dokumenata", "afidavid dokumentacija", "video dokaz predaje dokumentacije",
+              "usluge garancije advokata kao svedoka", "sve neophodne takse", "troškovi na terenu (ukoliko se radi u Beogradu)", "pismeni izveštaj"]}
+            else if (url === "26"){
+              return ["dva licencirana detektiva", "jedno vozilo", "fotografije i video snimci", "sav dokazni materijal", "sva neophodna dokumentacija", "sve takse", "terenski operativni rad", "troškovi na terenu (ukoliko se radi u Beogradu)", 
+              "“prikriveni islednik” po potrebi", "“insajder” po potrebi", "veštačenje po potrebi", "svedočenje po potrebi", "pismeni izveštaj"]}
+            else if (url === "27"){
+              return [ "dva licencirana detektiva", "jedno vozilo", "“insajder” metoda", "“prikriveni islednik” metoda", "intervjuisanje", "pronalaženje “krtice”", "prevencija “curenja informacija”", "odabir kadra", 
+              "selekcija kandidata za zapošljavanje", "monitoring u kontinuitetu", "“maitanance” testovi", "specijalizovani poligraf testovi", "proveravanje kadra na osetljivim pozicijama", "kreiranje bezbednosnog mehanizma preventivnog tipa", 
+              "sortiranje osumnjičenih", "ispitivanje", "analiza dokaza", "analiza dokumenata", "testiranje na špijunažu i sabotažu", "preventivno delovanje", "post-incidentno delovanje", "ublažavanja posledica", "primena metoda prevencije", "kontra-obaveštajne usluge",
+              "rekonstrukcija događaja", "sva dokumentacija", "troškovi na terenu (ukoliko se radi u Beogradu)", "snimci i fotografije", "dokazni materijal", "procena štete", "pismeni izveštaj"]}
+            else if (url === "1p"){
+              return ["licencirani poligrafski ispitivač", "iznajmljivanje poligraf opreme", "intervjuisanje subjekta", "savetovanje klijenta", "pripremni test", "sprovođenje poligraf testa", "ispitivanje subjekta", 
+              "testiranje na prisustvo narkotika u urinu", "pismeni izveštaj", "kontrola kvaliteta", "profesionalna procena kredibiliteta"]} 
+            else if (url === "2p"){
+              return ["ustupanje podataka iz baze poligrafa", "veštačanje poligrafa", "prezentacija grafikona", "analiza", "stručna ekspertiza", "profesionalna procena kredibiliteta", "zaključak", "pismeni izveštaj"]}
+            else if (url === "3p"){
+              return ["svedočenje u sudskom procesu", "dolazak na lice mesta", "ustupanje podataka iz baze poligrama", "profesionalna procena kredibiliteta", "veštačanje poligrama", "prezentacija grafikona", "analiza", "zaključak", "stručna eskpertiza", "pismeni izveštaj"]}
+            else if (url === "4p"){
+              return ["licencirani poligrafski ispitivač", "iznajmljivanje poligraf opreme", "intervjuisanje subjekta", "savetovanje klijenta", "pripremni test", "sprovođenje poligraf testa", "“pre-emp” upitnik", "primena “screening” metoda", "primena “single issue” metode", "ispitivanje subjekta", 
+              "profesionalna procena kredibiliteta", "testiranje na prisustvo narkotika u urinu", "pismeni izveštaj", "kontrola kvaliteta"]}
+            else if (url === "5p"){
+              return ["licencirani poligrafski ispitivač", "iznajmljivanje poligraf opreme", "intervjuisanje subjekta", "savetovanje klijenta", "pripremni test", "sprovođenje poligraf testa", "primena “single issue” metode", "ispitivanje subjekta", "profesionalna procena kredibiliteta", 
+              "testiranje na prisustvo narkotika u urinu", "pismeni izveštaj", "kontrola kvaliteta"]}
+            else if (url === "6p"){
+              return ["licencirani poligrafski ispitivač", "iznajmljivanje poligraf opreme", "intervjuisanje subjekta", "savetovanje klijenta"," pripremni test", "sprovođenje poligraf testa", "primena “single issue” metode", "ispitivanje subjekta", "profesionalna procena kredibiliteta", 
+              "testiranje na prisustvo narkotika u urinu", "pismeni izveštaj", "kontrola kvaliteta"]}
+            else if (url === "7p"){
+              return ["licencirani poligrafski ispitivač", "iznajmljivanje poligraf opreme", "intervjuisanje subjekta", "savetovanje klijenta", "pripremni test", "sprovođenje poligraf testa", "“pre-emp” upitnik", "primena “screening” metoda"," primena “single issue” metode", 
+              "profesionalna procena kredibiliteta", "ispitivanje subjekta", "testiranje na prisustvo narkotika u urinu"," pismeni izveštaj", "kontrola kvaliteta"]}
+            else if (url === "8p"){
+              return ["licencirani poligrafski ispitivač", "iznajmljivanje poligrafske opreme", "intervjuisanje subjekta", "razgovor sa klijentom", "pripremni test", "sprovođenje poligraf testa", "testiranje na prisustvo narkotika u urinu", "uvid u poligram", "profesionalna procena kredibiliteta", "ispitivanje subjekta",
+            "pismeni izveštaj", "kontrola kvaliteta"]}
+            else if (url === "9p"){
+              return ["licencirani poligrafski ispitivač", "iznajmljivanje poligrafske opreme", "intervjuisanje subjekta", "razgovor sa klijentom", "savetovanje emotivnog para", "pripremni test", "sprovođenje poligraf testa", "testiranje na prisustvo narkotika u urinu", "profesionalna procena kredibiliteta", "uvid u poligram", 
+              "ispitivanje subjekta", "pismeni izveštaj", "kontrola kvaliteta"]}
+            else if (url === "10p"){
+              return ["licencirani poligrafski ispitivač", "iznajmljivanje poligrafske opreme", "intervjuisanje subjekta", "razgovor sa klijentom", "pripremni test", "rekonstrukcija događaja", "sprovođenje poligraf testa", "profesionalna procena kredibiliteta", "testiranje na prisustvo narkotika u urinu", 
+              "ispitivanje subjekta", "pismeni izveštaj", "kontrola kvaliteta"]}
+            else if (url === "11p"){
+              return ["licencirani poligrafski ispitivač", "iznajmljivanje poligrafske opreme", "intervjuisanje subjekta", "pripremni test", "primena “TES” metode", "primena “POT” metode", "sprovođenje poligraf testa", "testiranje na prisustvo narkotika u urinu", "profesionalna procena kredibiliteta", 
+              "ispitivanje subjekta", "pismeni izveštaj", "kontrola kvaliteta", "uvid u poligram"]}
+            else if (url === "12p"){
+              return ["licencirani poligrafski ispitivač", "iznajmljivanje poligrafske opreme", "intervjuisanje subjekta", "razgovor sa klijentom", "pripremni test", "sprovođenje poligraf testa", "testiranje na prisustvo narkotika u urinu", "profesionalna procena kredibiliteta", "ispitivanje subjekta", 
+              "pismeni izveštaj", "uvid u poligram", "kontrola kvaliteta"]}
+            else if (url === "13p"){
+              return ["licencirani poligrafski ispitivač", "iznajmljivanje poligrafske opreme", "intervjuisanje subjekta", "razgovor sa klijentom", "primena “screening” metode", "primena “single issue” metode", "procena kredibiliteta", "predbračni upitnik", "pripremni test", "sprovođenje poligraf testa", 
+              "testiranje na prisustvo narkotika u urinu", "profesionalna procena kredibiliteta", "ispitivanje subjekta", "pismeni izveštaj", "kontrola kvaliteta", "uvid u poligram"]}
+            else if (url === "14p"){
+              return ["licencirani poligrafski ispitivač", "iznajmljivanje poligrafske opreme", "intervjuisanje subjekta", "razgovor sa klijentom", "pripremni test", "sprovođenje poligraf testa", "primena “monitoring” metode", "primena “maintanance” metode", "primena “TES” metode", "testiranje na prisustvo narkotika u urinu", 
+              "uvid u poligram", "profesionalna procena kredibiliteta", "ispitivanje subjekta", "pismeni izveštaj", "kontrola kvaliteta"]}
+            else if (url === "15p"){
+              return ["licencirani poligrafski ispitivač", "iznajmljivanje poligrafske opreme", "intervjuisanje subjekta", "primena “PCSOT” standarda", "razgovor sa klijentom", "prikupljanje podataka od “optuženog” i “žrtve”", "sprovođenje dvostrukog testiranja", "pripremni test", "sprovođenje poligraf testa",
+              "testiranje na prisustvo narkotika u urinu", "uvid u poligram", "profesionalna procena kredibiliteta", "ispitivanje subjekta", "pismeni izveštaj", "kontrola kvaliteta"]}
+            else if (url === "16p"){
+              return ["licencirani poligrafski ispitivač", "iznajmljivanje poligrafske opreme", "intervjuisanje subjekta", "razgovor sa klijentom", "pripremni test", "sprovođenje poligraf testa", "testiranje na prisustvo narkotika u urinu", "uvid u poligram", "profesionalna procena kredibiliteta", 
+              "ispitivanje subjekta", "pismeni izveštaj", "kontrola kvaliteta"]}
+            else if (url === "17p"){
+              return ["licencirani poligrafski ispitivač", "iznajmljivanje poligrafske opreme", "intervjuisanje subjekta", "primena specijalizovene “SOSANO” metode", "razgovor sa klijentom", "pripremni test", "periodično testiranje", "ulazak u program odvikavanja (po potrebi i dogovoru)", "sprovođenje poligraf testa", "testiranje na prisustvo narkotika u urinu", "uvid u poligram", "profesionalna procena kredibiliteta",
+            "ispitivanje subjekta", "pismeni izveštaj", "kontrola kvaliteta"]}
+            else if (url === "18p"){
+              return ["licencirani poligrafski ispitivač", "iznajmljivanje poligrafske opreme", "intervjuisanje subjekta", "primena “screening” metoda", "primena eliminacione metode", "primena “single issue” metode",
+            "veći broj testova", "pre-emp upitnik", "razgovor sa klijentom", "pripremni test", "sprovođenje poligraf testa", "testiranje na prisustvo narkotika u urinu", "uvid u poligram", "profesionalna procena kredibiliteta", "ispitivanje subjekta", "pismeni izveštaj", "kontrola kvaliteta"]}
+            else if (url === "1f"){
+              return ["stručnjak za forenzičko računovodstvo", "stručna analiza", "lociranje “rupe”", "definisanje problematike", "odabir metode", "primena metode", "pismeni izveštaj"]}
+            else if (url === "2f"){
+              return ["stručnjak za elektronsku forenziku", "iznajmljivanje oprema za forenziku", "kreiranje “dump” fajla", "trostruka ekstrakcija", "sortiranje podataka", "snimanje na medijum po želji", "video prezentacija", "izveštaj u elektronskoj formi"]}
+            else if (url === "3f"){
+              return ["licencirani mobilni forenzičar", "iznajmljivanje opreme za mobilnu forenziku", "trostruka ekstrakcija sa tri različita sofrvera", "kreiranje “dump” fajla", "sortiranje podataka", "snimanje na medijum po želji", "video prezentacija", "izveštaj u elektronskoj formi"]}
+            else if (url === "4f"){
+              return ["licencirani računarski forenzičar", "iznajmljivanje opreme za računarsku forenziku", "profesionalna ekstrakcija sa har diska", "sortiranje podataka", "sortiranje podataka", "snimanje podataka na usb", "izveštaj u elektronskoj formi"]}
+            else if (url === "5f"){
+              return ["dva stručnjaka za otkrivanje prislušnih uređaja", "iznajmljivanje profesionalne opreme", "upotreba “motorola” skenera od 10.000 eura", "jedini u Srbiji", "skreniranje celog ospega frekfencije", "fizički pregled objekta",
+            "dolazak na adresu", "uklanjanje prislušne opreme", "garancija rezultata; izveštaj"]}
+            else if (url === "6f"){
+              return ["profesionalna kriminološka analiza rukopisa", "uzimanje uzorka", "profesionalna komparacija uzoraka", "prezentacija rezultata", "profesionalno mišljenje", "pismeni izveštaj"]}
+            else if (url === "7f"){
+              return ["licencirani poligrafski ispitivač", "kriminalista-specijalista", "iznamljivanje poligrafske opreme", "intervjuisanje subjekta", "razgovor sa klijentom", "pripremni test", "analiza urina radi detekcije ilegalnih supstanci", "kreiranje zavisnih i nezavisnih varijabila", 
+              "primena “CIT” tehnike", "prezentacija rezultata", "pismeni izveštaj", "kontrola kvaliteta"]}
+            else if (url === "8f"){
+              return ["forenzički stručnjak", "iznajmljivne forezičke opreme", "“brute force” metoda", "7 dana “etičkog hakovanja”", "razbijanje ili zaobilaženje šifre"]}
+            else if (url === "9f"){
+              return ["forenzički stručnjak", "analiza uređaja", "podešavanje uređaja", "ubacivanje virusa", "instalacija malvera", "tesitiranje funkcionalnosti", "kreiranje interfejsa", 
+              "obuka klijenta", "dnevno izveštanje", "podrška 7 dana u nedelji"]}
+            else if (url === "10f"){
+              return ["forenzički stručnjak", "analiza uređaja", "podešavanje uređaja", "ubacivanje virusa", "instalacija malvera", "tesitiranje funkcionalnosti", "kreiranje interfejsa", 
+              'obuka klijenta', "dnevno izveštanje", 'podrška 7 dana u nedelji']}
+            else if (url === "1k"){
+              return["usluge dva stručnjaka- kriminaliste specijaliste i mastera korporativne bezbednosti", "analiza nivoa beznednosti", "analiza problematike", "prezentacija prcedura", 
+              "savetovanje o najefikasnijem rešenju", "asistencija pri implemantaciji bezbednosne metode", "nadgledanje implemantacije", "obuka osoblja i menadženta", 
+              "simulacija i testiranje fukcionalnosti i nivoa efikasnostni bezbednosnog mehanizma", "podrška 7 dana u nedelji"]
+            }
+            else if (url === "2k"){
+              return["usluge dva stručnjaka- kriminaliste specijaliste i mastera korporativne bezbednosti", "analiza problematike", "analiza bezbednosnih provedura", 
+              "pomoć pri odabiru metodike pristupa rešavanja problema", "prezentacija procedura", "savetovanje o najefikasnijem rešenju", "asistencija pri implemantaciji metode", 
+              "nadgledanje implementacije", "podrška 7 dana u nedelji"]
+            }
+            else if (url === "3k"){
+              return[ "analiza rizika u objektu", "analiza rizika u poslovanju", "analiza bezbednostnih procedura", "kreiranje izveštaja o proceni rizika i ranjivosti", 
+              "prezentacija bezbednosnih metoda, mera i mehanizama", "sastavljanje izveštaja sa predlozima rešenja primenom bezbednosnog mehanizma"]}
+            else if (url === "4k"){
+              return["IT tim stručnjaka za bezbednost", "analiza nivoa bezbednosti svih kanala za komunikaciju", "impemantacija bezbednosnih procedura", 
+              "kreiranje “sigurnih” kanala komunikacije", "uklanjanje bezbednosnih pretnji", "pismeni izveštaj i stanju i merama koje su primenjene"]
+            }
+            else if (url === "5k"){
+              return["IT tim stručnjaka za penetraciono testiranje", "analiza sistema", 'primena metode “etičko hakovenje”', "sprovođenje pen-testa", "definisanje slabih tački i ranjivosti", 
+              "“krpljenje” svih slabosti", "implementacija bezbednosnih mehanizama", "obuka menadžmenta i zaposlenih", "pismeni izveštaj"]
+            }
+            else if (url === "6k"){
+              return["angažovanje dva stručnjaka - master korporativne bezbednosti i ekonomista za izvršno upravljanje", "analiza probelmatike", "prezenticija beznednosnih mehanizama",
+              "odabir metodike", "implementacija mehanizma", "obuka menadžmenta i osoblja", "nadgledanje primene", "savetovanje", "podrška 7 dana u nedelji"]
+            }
+            else if (url === "7k"){
+              return["tim stručnjaka za bezbednost", "sprovođenje analize", "definisanje snaga pravnog lica", "definisanje slabosti pravnog lica", "definisanje poslovnih šansi pravnog lica", 
+              "definisanje pretnji pravnom licu", "prezentacija rezultata", "bezbednosni konsaltnig", "pismeni izveštaj"]
+            }  
+      } 
+      </script>
+        <ul class="list-group" id="cena-usluge">
+        <script>
+        var data = getURL()
+        let list = document.getElementById("cena-usluge");      
+        data.forEach((item) => {
+          let li = document.createElement("li");
+          li.innerText = `# ${item.toUpperCase()}`;
+          li.classList.add("list-group-item");
+          list.appendChild(li);        
+        });
+        </script>
+        </ul>
+    <span onClick={window.history.back()} class="btn btn-primary btn-block mt-3">Nazad</span>
 </div>
 </body>
 </html>
